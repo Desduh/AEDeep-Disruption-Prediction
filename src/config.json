@@ -1,0 +1,29 @@
+{
+  "p_model": {
+    "p_value": 0.28,
+    "series_length_train": 4096,
+    "series_length_eval": 320
+  },
+  "data": {
+    "window_size": 512,
+    "lookahead": 10,
+    "peak_threshold": 0.5,
+    "normalization_percentile": 99.0
+  },
+  "model": {
+    "input_dim": 1,
+    "projection_dim": 128,
+    "hidden_dim": 512,
+    "num_layers": 6,
+    "dropout": 0.0
+  },
+  "training": {
+    "epochs": 40,
+    "batch_size": 64,
+    "learning_rate": 0.0001,
+    "num_series_per_epoch": 1
+  },
+  "files": {
+      "model_save_path": "src/lstm_peak_predictor.pth"
+  }
+}
